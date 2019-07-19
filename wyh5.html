@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>When You Have Five HTML</title>
+    <link rel="shortcut icon" href="/melbootcamp2019julyt1/en-US/static/@6D7A5C8217C96C8F9823C4FB0D2F2AF2056051E5D2DC0A08209EAC51D424A758/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="{{SPLUNKWEB_URL_PREFIX}}/static/build/css/bootstrap-enterprise.css" />
+    <link rel="stylesheet" type="text/css" href="{{SPLUNKWEB_URL_PREFIX}}/static/build/css/splunkjs-dashboard.css" />
+
+
+        <meta name="referrer" content="never" />
+        <meta name="referrer" content="no-referrer" />
+
+        <script>
+            (function () {
+                window._splunk_metrics_events = [];
+                window._splunk_metrics_events.active = true;
+
+                function onLoadSwa() {
+                    new SWA({"userID": "bc3a4d437543cedb656bdc07f19be756bd00b329a01824d11b672ba1627fa1e8", "visibility": "anonymous,support", "instanceGUID": "A13A2D94-E2B3-453D-B9EE-927DF6AEBB31", "version": "3", "url": "https://e1345286.api.splkmobile.com/1.0/e1345286", "deploymentID": "3a1f6bc8-4ae5-5490-bead-597193b69e5b"});
+                };
+
+                document.addEventListener("DOMContentLoaded", function(event) {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = '/melbootcamp2019julyt1/en-US/static/app/splunk_instrumentation/build/pages/swa.js';
+                    s.addEventListener('load', onLoadSwa);
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                });
+            }());
+        </script>
+    </head>
+<body class="simplexml preload locale-en" data-splunk-version="7.1.4" data-splunk-product="enterprise">
+<!--
+BEGIN LAYOUT
+This section contains the layout for the dashboard. Splunk uses proprietary
+styles in <div> tags, similar to Bootstrap's grid system.
+-->
+<header>
+    <a aria-label="Screen reader users, click here to skip the navigation bar" class="navSkip" href="#navSkip" tabIndex="1">Skip Navigation &gt;</a>
+    <div class="header splunk-header">
+            <div id="placeholder-splunk-bar">
+                <a href="{{SPLUNKWEB_URL_PREFIX}}/app/launcher/home" class="brand" title="splunk &gt; listen to your data">splunk<strong>&gt;</strong></a>
+            </div>
+                <div id="placeholder-app-bar"></div>
+    </div>
+    <a id="navSkip"></a>
+</header>
+<div class="dashboard-body container-fluid main-section-body" data-role="main">
+    <div class="dashboard-header clearfix">
+        <h2>When You Have Five HTML</h2>
+        <p class="description">dashboard</p>
+    </div>
+    <div class="fieldset">
+        <div class="input input-text" id="input1">
+            <label>EnterpriseID</label>
+        </div>
+    </div>
+
+
+    <div id="row1" class="dashboard-row dashboard-row1">
+        <div id="panel1" class="dashboard-cell" style="width: 100%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element1" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row2" class="dashboard-row dashboard-row2">
+        <div id="panel2" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element2" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Number of Items To Complete</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel3" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element3" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Feedback Inbox</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row3" class="dashboard-row dashboard-row3">
+        <div id="panel4" class="dashboard-cell" style="width: 20%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element4" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Hours of Paid Leave</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel5" class="dashboard-cell" style="width: 20%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element5" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Upcoming Tasks</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel6" class="dashboard-cell" style="width: 20%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element6" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Projects Overdue</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel7" class="dashboard-cell" style="width: 20%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element7" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Nationality Listed</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel8" class="dashboard-cell" style="width: 20%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element8" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Strengths Completed</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row4" class="dashboard-row dashboard-row4">
+        <div id="panel9" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element9" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Working City</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel10" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element10" class="dashboard-element viz" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Career Level Group</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row5" class="dashboard-row dashboard-row5">
+        <div id="panel11" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element11" class="dashboard-element chart" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Completion of nationality forms by city</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel12" class="dashboard-cell" style="width: 50%;">
+            <div class="dashboard-panel clearfix">
+
+                <div class="panel-element-row">
+                    <div id="element12" class="dashboard-element chart" style="width: 100%">
+                        <div class="panel-head">
+                            <h3>Completion of nationality forms by Career Level Groups</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+END LAYOUT
+-->
+
+<script src="{{SPLUNKWEB_URL_PREFIX}}/config?autoload=1" crossorigin="use-credentials"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/static/js/i18n.js"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/i18ncatalog?autoload=1"></script>
+<script src="{{SPLUNKWEB_URL_PREFIX}}/static/build/simplexml/index.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+// <![CDATA[
+//
+// LIBRARY REQUIREMENTS
+//
+// In the require function, we include the necessary libraries and modules for
+// the HTML dashboard. Then, we pass variable names for these libraries and
+// modules as function parameters, in order.
+//
+// When you add libraries or modules, remember to retain this mapping order
+// between the library or module and its function parameter. You can do this by
+// adding to the end of these lists, as shown in the commented examples below.
+
+require([
+    "splunkjs/mvc",
+    "splunkjs/mvc/utils",
+    "splunkjs/mvc/tokenutils",
+    "underscore",
+    "jquery",
+    "splunkjs/mvc/simplexml",
+    "splunkjs/mvc/layoutview",
+    "splunkjs/mvc/simplexml/dashboardview",
+    "splunkjs/mvc/simplexml/dashboard/panelref",
+    "splunkjs/mvc/simplexml/element/chart",
+    "splunkjs/mvc/simplexml/element/event",
+    "splunkjs/mvc/simplexml/element/html",
+    "splunkjs/mvc/simplexml/element/list",
+    "splunkjs/mvc/simplexml/element/map",
+    "splunkjs/mvc/simplexml/element/single",
+    "splunkjs/mvc/simplexml/element/table",
+    "splunkjs/mvc/simplexml/element/visualization",
+    "splunkjs/mvc/simpleform/formutils",
+    "splunkjs/mvc/simplexml/eventhandler",
+    "splunkjs/mvc/simplexml/searcheventhandler",
+    "splunkjs/mvc/simpleform/input/dropdown",
+    "splunkjs/mvc/simpleform/input/radiogroup",
+    "splunkjs/mvc/simpleform/input/linklist",
+    "splunkjs/mvc/simpleform/input/multiselect",
+    "splunkjs/mvc/simpleform/input/checkboxgroup",
+    "splunkjs/mvc/simpleform/input/text",
+    "splunkjs/mvc/simpleform/input/timerange",
+    "splunkjs/mvc/simpleform/input/submit",
+    "splunkjs/mvc/searchmanager",
+    "splunkjs/mvc/savedsearchmanager",
+    "splunkjs/mvc/postprocessmanager",
+    "splunkjs/mvc/simplexml/urltokenmodel"
+    // Add comma-separated libraries and modules manually here, for example:
+    // ..."splunkjs/mvc/simplexml/urltokenmodel",
+    // "splunkjs/mvc/tokenforwarder"
+    ],
+    function(
+        mvc,
+        utils,
+        TokenUtils,
+        _,
+        $,
+        DashboardController,
+        LayoutView,
+        Dashboard,
+        PanelRef,
+        ChartElement,
+        EventElement,
+        HtmlElement,
+        ListElement,
+        MapElement,
+        SingleElement,
+        TableElement,
+        VisualizationElement,
+        FormUtils,
+        EventHandler,
+        SearchEventHandler,
+        DropdownInput,
+        RadioGroupInput,
+        LinkListInput,
+        MultiSelectInput,
+        CheckboxGroupInput,
+        TextInput,
+        TimeRangeInput,
+        SubmitButton,
+        SearchManager,
+        SavedSearchManager,
+        PostProcessManager,
+        UrlTokenModel
+
+        // Add comma-separated parameter names here, for example:
+        // ...UrlTokenModel,
+        // TokenForwarder
+        ) {
+
+        var pageLoading = true;
+
+
+        //
+        // TOKENS
+        //
+
+        // Create token namespaces
+        var urlTokenModel = new UrlTokenModel();
+        mvc.Components.registerInstance('url', urlTokenModel);
+        var defaultTokenModel = mvc.Components.getInstance('default', {create: true});
+        var submittedTokenModel = mvc.Components.getInstance('submitted', {create: true});
+
+        urlTokenModel.on('url:navigate', function() {
+            defaultTokenModel.set(urlTokenModel.toJSON());
+            if (!_.isEmpty(urlTokenModel.toJSON()) && !_.all(urlTokenModel.toJSON(), _.isUndefined)) {
+                submitTokens();
+            } else {
+                submittedTokenModel.clear();
+            }
+        });
+
+        // Initialize tokens
+        defaultTokenModel.set(urlTokenModel.toJSON());
+
+        function submitTokens() {
+            // Copy the contents of the defaultTokenModel to the submittedTokenModel and urlTokenModel
+            FormUtils.submitForm({ replaceState: pageLoading });
+        }
+
+        function setToken(name, value) {
+            defaultTokenModel.set(name, value);
+            submittedTokenModel.set(name, value);
+        }
+
+        function unsetToken(name) {
+            defaultTokenModel.unset(name);
+            submittedTokenModel.unset(name);
+        }
+
+
+
+        //
+        // SEARCH MANAGERS
+        //
+
+
+var search1 = new SearchManager({
+            "id": "search1",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_feedback_index\" EnterpriseID = $eid$ | eval self = case(FeedbackType = \"Self Input\", \"y\", 1=1, \"n\")  | eval icon_value = \"inbox\", color_value = case(self = \"y\", \"#f8be34\", 1=1, \"#006d9c\") | eval fName= mvindex(split(EnterpriseID, \".\"),0) | eval lName= mvindex(split(EnterpriseID, \".\"),1) | eval Name= \"Welcome \".upper(substr(fName,1,1)).lower(substr(fName,2)).\" \".upper(substr(lName,1,1)).lower(substr(lName,2)) | table Name",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search2 = new SearchManager({
+            "id": "search2",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_feedback\" EnterpriseID = $eid$ | join type=left EnterpriseID      [| search index=\"anzhr_leave_balance_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_perf_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_strength_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_nationality_index\"]  | eval bool_one= case(Amount<=100, 1, 1=1, 0)  | eval bool_two= case(StrengthsStatus =\"Not Started\", 1, 1=1, 0) | eval bool_three= case(isnull(CompleteStatus), 1, 1=1, 0) |eval due=strptime(PriorityTargetCompletionDate,\"%m/%d/%Y\"), nowtime=now() ,diff =due-nowtime , days = diff/60/60/24,  bool_four = CASE(diff <=0, 1, 1=1, 0) |eval bool_five = case(days<14 and PriorityStatus != \"COMPLETED-FY19\", 1, 1=1, 0) |eval num_flags = bool_one + bool_two + bool_three + bool_four + bool_five |table EnterpriseID num_flags |stats max(num_flags)",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search3 = new SearchManager({
+            "id": "search3",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_roster_index\" EnterpriseID= $eid$ | join type=left EnterpriseID   [| search index=\"anzhr_feedback_index\" ] | eval newCol= case(isnull(FeedbackAuthor) OR FeedbackType=\"Self Input\", \"No Feedback\", 1=1, FeedbackType) | eval icon_value = \"inbox\", color_value = case(newCol = \"No Feedback\", \"#f8be34\", 1=1, \"#006d9c\") | table newCol icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search4 = new SearchManager({
+            "id": "search4",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_leave_balance_index\" EnterpriseID = $eid$ | eval icon_value =  case(Amount < 100, \"warning\", 1=1, \"credit-card\") | eval color_value = case(Amount < 100, \"red\", 1=1, \"green\") | table Amount icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search5 = new SearchManager({
+            "id": "search5",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_perf_index\" EnterpriseID = $eid$| eval due=strptime(PriorityTargetCompletionDate,\"%m/%d/%Y\"), nowtime=now() ,diff =due-nowtime , days = diff/60/60/24,  wholedays = abs(ceiling(days)), result = Project.\" is due in \".wholedays.\" days\"  ,res = CASE(days > 0, result, days <= 0, \"0 tasks upcoming.\" ) |eval urgent = case(days < 14 and PriorityStatus != \"COMPLETED-FY19\", \"Y\", PriorityStatus = \"COMPLETED-FY19\", \"D\", 1=1, \"N\")| eval icon_value = case(urgent = \"Y\", \"warning\", urgent = \"D\", \"check\", 1=1, \"cloud\") | eval color_value = case(urgent=\"Y\", \"red\", urgent = \"D\", \"green\", 1=1, \"#f8be34\") | table res icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search6 = new SearchManager({
+            "id": "search6",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_perf_index\" EnterpriseID = $eid$| eval due=strptime(PriorityTargetCompletionDate,\"%m/%d/%Y\"), nowtime=now() ,diff =due-nowtime , days = diff/60/60/24,  wholedays = abs(ceiling(days)), result = CASE(diff <=0, Project.\" is \".wholedays.\" days overdue.\", 1=1, \"No tasks overdue.\" ),           overdue = CASE(diff <=0, \"y\", 1=1, \"n\")| where PriorityStatus != \"DRAFT\" | eval icon_value = case(overdue=\"n\", \"check\", 1=1,\"warning\"), color_value = case(overdue=\"n\", \"green\", 1=1,\"red\")|table result icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search7 = new SearchManager({
+            "id": "search7",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_nationality_index\" sourcetype=\"anzhr4\"  EnterpriseID = $eid$ | eval completed = case(isnull(CompleteStatus), \"Not Completed\", 1=1, \"Completed\")| eval icon_value = case(completed = \"Completed\", \"check\", 1=1, \"warning\") | eval color_value = case(completed=\"Completed\", \"green\", 1=1, \"red\") | table completed icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search8 = new SearchManager({
+            "id": "search8",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_strength_index\" EnterpriseID = $eid$| head 1 | eval icon_value = case(StrengthsStatus =\"Not Started\", \"warning\", 1=1, \"check\")| eval color_value = case(StrengthsStatus =\"Not Started\", \"red\", 1=1, \"green\") | table StrengthsStatus icon_value color_value",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search9 = new SearchManager({
+            "id": "search9",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_perf_index\" EnterpriseID=$eid$ | table City",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search10 = new SearchManager({
+            "id": "search10",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_feedback_index\" EnterpriseID = $eid$ | eval self = case(FeedbackType = \"Self Input\", \"y\", 1=1, \"n\") | eval icon_value = \"inbox\", color_value = case(self = \"y\", \"#f8be34\", 1=1, \"#006d9c\") |eval details = EnterpriseID.\"\\n  hello \"| table CareerLevelGroup",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search11 = new SearchManager({
+            "id": "search11",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_feedback\"  | join type=left EnterpriseID      [| search index=\"anzhr_leave_balance_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_perf_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_strength_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_nationality_index\"] | eval iscomplete = case(isnull(CompleteStatus), \"Complete\", 1=1, \"Incomplete\") | table EnterpriseID iscomplete City | stats count by City iscomplete",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+var search12 = new SearchManager({
+            "id": "search12",
+            "cancelOnUnload": true,
+            "earliest_time": "0",
+            "sample_ratio": null,
+            "status_buckets": 0,
+            "latest_time": "$latest$",
+            "search": "index=\"anzhr_feedback\"  | join type=left EnterpriseID      [| search index=\"anzhr_leave_balance_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_perf_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_strength_index\"]  | join type=left EnterpriseID      [| search index=\"anzhr_nationality_index\"] | eval iscomplete = case(isnull(CompleteStatus), \"Complete\", 1=1, \"Incomplete\") | table EnterpriseID iscomplete City CareerLevelGroup | stats count by CareerLevelGroup iscomplete",
+            "app": utils.getCurrentApp(),
+            "auto_cancel": 90,
+            "preview": true,
+            "tokenDependencies": {
+            },
+            "runWhenTimeIsUndefined": false
+        }, {tokens: true, tokenNamespace: "submitted"});
+
+
+        //
+        // SPLUNK LAYOUT
+        //
+
+        $('header').remove();
+        new LayoutView({"hideSplunkBar": false, "hideChrome": false, "hideAppBar": false})
+            .render()
+            .getContainerElement()
+            .appendChild($('.dashboard-body')[0]);
+
+        //
+        // DASHBOARD EDITOR
+        //
+
+        new Dashboard({
+            id: 'dashboard',
+            el: $('.dashboard-body'),
+            showTitle: true,
+            editable: true
+        }, {tokens: true}).render();
+
+
+        //
+        // VIEWS: VISUALIZATION ELEMENTS
+        //
+
+        var element1 = new VisualizationElement({
+            "id": "element1",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#DB7093",
+            "status_indicator_app.status_indicator.fixIcon": "users",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "static_color",
+            "status_indicator_app.status_indicator.icon": "fix_icon",
+            "status_indicator_app.status_indicator.precision": "2",
+            "refresh.display": "progressbar",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search1",
+            "el": $('#element1')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element1.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element2 = new VisualizationElement({
+            "id": "element2",
+            "type": "horseshoe_meter_app.horseshoe_meter",
+            "drilldown": "none",
+            "horseshoe_meter_app.horseshoe_meter.midRangeColor": "#fbcd2f",
+            "horseshoe_meter_app.horseshoe_meter.dialColor": "#d0d5d9",
+            "horseshoe_meter_app.horseshoe_meter.maxRangeColor": "#dc4e41",
+            "horseshoe_meter_app.horseshoe_meter.thresholdStyle": "realValue",
+            "horseshoe_meter_app.horseshoe_meter.valueColor": "#555",
+            "horseshoe_meter_app.horseshoe_meter.midRangeThreshold": "2",
+            "horseshoe_meter_app.horseshoe_meter.caption": "Number of Items",
+            "horseshoe_meter_app.horseshoe_meter.backgroundColor": "#FFFFFF",
+            "horseshoe_meter_app.horseshoe_meter.useRangemap": "true",
+            "horseshoe_meter_app.horseshoe_meter.maxRangeThreshold": "3",
+            "refresh.display": "progressbar",
+            "horseshoe_meter_app.horseshoe_meter.maxValue": "5",
+            "horseshoe_meter_app.horseshoe_meter.minValue": "0",
+            "horseshoe_meter_app.horseshoe_meter.minRangeColor": "#53a051",
+            "resizable": true,
+            "managerid": "search2",
+            "el": $('#element2')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        var element3 = new VisualizationElement({
+            "id": "element3",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "credit-card",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "refresh.display": "progressbar",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search3",
+            "el": $('#element3')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element3.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://www.reddit.com/r/RoastMe/", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element4 = new VisualizationElement({
+            "id": "element4",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "credit-card",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search4",
+            "el": $('#element4')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element4.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element5 = new VisualizationElement({
+            "id": "element5",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "credit-card",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "refresh.display": "progressbar",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search5",
+            "el": $('#element5')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element5.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element6 = new VisualizationElement({
+            "id": "element6",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "credit-card",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search6",
+            "el": $('#element6')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element6.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element7 = new VisualizationElement({
+            "id": "element7",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "question",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search7",
+            "el": $('#element7')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element7.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element8 = new VisualizationElement({
+            "id": "element8",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#d93f3c",
+            "status_indicator_app.status_indicator.fixIcon": "credit-card",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "field_value",
+            "status_indicator_app.status_indicator.icon": "field_value",
+            "status_indicator_app.status_indicator.precision": "2",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "background",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search8",
+            "el": $('#element8')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element8.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element9 = new VisualizationElement({
+            "id": "element9",
+            "type": "departures-board-viz.departures-board-viz",
+            "drilldown": "none",
+            "departures-board-viz.departures-board-viz.auto_refresh": "true",
+            "departures-board-viz.departures-board-viz.align": "left",
+            "departures-board-viz.departures-board-viz.size": "XL",
+            "departures-board-viz.departures-board-viz.token_id": "dbv_id",
+            "departures-board-viz.departures-board-viz.timing": "500",
+            "departures-board-viz.departures-board-viz.auto_refresh_period": "5",
+            "departures-board-viz.departures-board-viz.is_fixed_length": "false",
+            "resizable": true,
+            "departures-board-viz.departures-board-viz.text_align": "left",
+            "departures-board-viz.departures-board-viz.token_term": "dbv_term",
+            "departures-board-viz.departures-board-viz.force_all_caps": "true",
+            "departures-board-viz.departures-board-viz.theme": "dark",
+            "refresh.display": "progressbar",
+            "departures-board-viz.departures-board-viz.num_characters": "10",
+            "managerid": "search9",
+            "el": $('#element9')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        var element10 = new VisualizationElement({
+            "id": "element10",
+            "type": "status_indicator_app.status_indicator",
+            "status_indicator_app.status_indicator.staticColor": "#006d9c",
+            "status_indicator_app.status_indicator.fixIcon": "globe",
+            "status_indicator_app.status_indicator.showOption": "1",
+            "status_indicator_app.status_indicator.colorBy": "static_color",
+            "status_indicator_app.status_indicator.icon": "fix_icon",
+            "status_indicator_app.status_indicator.precision": "2",
+            "refresh.display": "progressbar",
+            "status_indicator_app.status_indicator.useThousandSeparator": "true",
+            "status_indicator_app.status_indicator.fillTarget": "text",
+            "status_indicator_app.status_indicator.useColors": "true",
+            "trellis.enabled": "0",
+            "resizable": true,
+            "managerid": "search10",
+            "el": $('#element10')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+        element10.on("click", function(e) {
+            if (e.field !== undefined) {
+                e.preventDefault();
+                var url = TokenUtils.replaceTokenNames("https://docs.google.com/forms/d/e/1FAIpQLSc64h64w9XlAjaRxsQQlEjJ1yv99_oee-12yKMf1nyql2uNdw/viewform?usp=sf_link", _.extend(submittedTokenModel.toJSON(), e.data), TokenUtils.getEscaper('url'), TokenUtils.getFilters(mvc.Components));
+                utils.redirect(url, false, "_blank");
+            }
+        });
+
+        var element11 = new ChartElement({
+            "id": "element11",
+            "charting.drilldown": "all",
+            "charting.chart": "pie",
+            "charting.layout.splitSeries": "1",
+            "trellis.enabled": "1",
+            "charting.axisTitleX.visibility": "collapsed",
+            "refresh.display": "progressbar",
+            "charting.axisTitleY.visibility": "collapsed",
+            "charting.chart.stackMode": "default",
+            "charting.legend.placement": "none",
+            "charting.axisTitleY2.visibility": "collapsed",
+            "resizable": true,
+            "managerid": "search11",
+            "el": $('#element11')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+
+        var element12 = new ChartElement({
+            "id": "element12",
+            "charting.drilldown": "all",
+            "charting.chart": "bar",
+            "charting.layout.splitSeries": "1",
+            "trellis.enabled": "1",
+            "charting.axisTitleX.visibility": "collapsed",
+            "refresh.display": "progressbar",
+            "charting.axisTitleY.visibility": "collapsed",
+            "charting.chart.stackMode": "default",
+            "charting.legend.placement": "none",
+            "charting.axisTitleY2.visibility": "collapsed",
+            "resizable": true,
+            "managerid": "search12",
+            "el": $('#element12')
+        }, {tokens: true, tokenNamespace: "submitted"}).render();
+
+
+
+        //
+        // VIEWS: FORM INPUTS
+        //
+
+        var input1 = new TextInput({
+            "id": "input1",
+            "default": "marwan.roach",
+            "searchWhenChanged": true,
+            "value": "$form.eid$",
+            "el": $('#input1')
+        }, {tokens: true}).render();
+
+        input1.on("change", function(newValue) {
+            FormUtils.handleValueChange(input1);
+        });
+
+        DashboardController.onReady(function() {
+            if (!submittedTokenModel.has('earliest') && !submittedTokenModel.has('latest')) {
+                submittedTokenModel.set({ earliest: '0', latest: '' });
+            }
+        });
+
+        // Initialize time tokens to default
+        if (!defaultTokenModel.has('earliest') && !defaultTokenModel.has('latest')) {
+            defaultTokenModel.set({ earliest: '0', latest: '' });
+        }
+
+        if (!_.isEmpty(urlTokenModel.toJSON())){
+            submitTokens();
+        }
+
+
+        //
+        // DASHBOARD READY
+        //
+
+        DashboardController.ready();
+        pageLoading = false;
+
+    }
+);
+// ]]>
+</script>
+</body>
+</html>
